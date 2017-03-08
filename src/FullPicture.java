@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class FullPicture extends JFrame{
-    private JButton exitButton, button, button2, button3;
+    private JButton exitButton, upArrow, downArrow, closebt;
     public static void main(String args[]){new FullPicture();}
     public FullPicture() {
         JPanel panel1 = new JPanel();
@@ -22,23 +22,23 @@ public class FullPicture extends JFrame{
         /** a different way of achieving full screen using the GraphicsEnviroment package
          * unlike the previous version, the program cannot be closed without the button*/
         ImageIcon closebt = new ImageIcon("file link to closebt.png");
-        button3 = new JButton(closebt);
+        closebt = new JButton(closebt);
         setLayout(new FlowLayout());
-        add(button3);
-        button3.setBorder(BorderFactory.createEmptyBorder());
-        button3.setContentAreaFilled(false);
+        add(closebt);
+        closebt.setBorder(BorderFactory.createEmptyBorder());
+        closebt.setContentAreaFilled(false);
         ImageIcon upArrow = new ImageIcon("file link to upArrow.png");
-        button = new JButton(upArrow);
+        upArrow = new JButton(upArrow);
         setLayout(new FlowLayout());
-        add(button);
-        button.setBorder(BorderFactory.createEmptyBorder());
-        button.setContentAreaFilled(false);//with top removes button borders
+        add(upArrow);
+        upArrow.setBorder(BorderFactory.createEmptyBorder());
+        upArrow.setContentAreaFilled(false);//with top removes button borders
         ImageIcon downArrow = new ImageIcon("file link to downArrow.png");
-        button2 = new JButton(downArrow);
+        downArrow = new JButton(downArrow);
         setLayout(new FlowLayout());
-        add(button2);
-        button2.setBorder(BorderFactory.createEmptyBorder());
-        button2.setContentAreaFilled(false);
+        add(downArrow);
+        downArrow.setBorder(BorderFactory.createEmptyBorder());
+        downArrow.setContentAreaFilled(false);
         this.setDefaultCloseOperation
                 (JFrame.EXIT_ON_CLOSE);
         this.pack();
