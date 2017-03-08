@@ -16,24 +16,24 @@ public class FullPicture extends JFrame{
         //exitButton.setContentAreaFilled(false);
         this.add(panel1);
         //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        this.setUndecorated(true);
+        this.setUndecorated(true); //enables fullscreen without window bar
         GraphicsEnvironment.getLocalGraphicsEnvironment().
-                getDefaultScreenDevice().setFullScreenWindow(this);
+                getDefaultScreenDevice().setFullScreenWindow(this); //enables full screen without taskbar
         /** a different way of achieving full screen using the GraphicsEnviroment package
          * unlike the previous version, the program cannot be closed without the button*/
-        ImageIcon closebt = new ImageIcon("/home/otakusenseihig/IdeaProjects/TestingFeatures/closebt.png");
+        ImageIcon closebt = new ImageIcon("file link to closebt.png");
         button3 = new JButton(closebt);
         setLayout(new FlowLayout());
         add(button3);
         button3.setBorder(BorderFactory.createEmptyBorder());
         button3.setContentAreaFilled(false);
-        ImageIcon upArrow = new ImageIcon("/home/otakusenseihig/IdeaProjects/TestingFeatures/upArrow.png");
+        ImageIcon upArrow = new ImageIcon("file link to upArrow.png");
         button = new JButton(upArrow);
         setLayout(new FlowLayout());
         add(button);
         button.setBorder(BorderFactory.createEmptyBorder());
-        button.setContentAreaFilled(false);
-        ImageIcon downArrow = new ImageIcon("/home/otakusenseihig/IdeaProjects/TestingFeatures/downArrow.png");
+        button.setContentAreaFilled(false);//with top removes button borders
+        ImageIcon downArrow = new ImageIcon("file link to downArrow.png");
         button2 = new JButton(downArrow);
         setLayout(new FlowLayout());
         add(button2);
