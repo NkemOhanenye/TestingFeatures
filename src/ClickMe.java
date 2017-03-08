@@ -14,7 +14,7 @@ public class ClickMe
         this.setTitle("I'm Listening");
         JPanel panel1 = new JPanel();
         button1 = new JButton("Click Me!");
-        //maks button say click me before clicked
+        //makes button say click me before clicked
         button1.addActionListener(this);
         panel1.add(button1);
         //makes button1 a panel
