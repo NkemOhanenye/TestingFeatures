@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class FullPicture extends JFrame{
-    private JButton exitButton, upArrow, downArrow, closebt;
+    private JButton exitButton, uparrow, downarrow, closebt;
     public static void main(String args[]){new FullPicture();}
     public FullPicture() {
         JPanel panel1 = new JPanel();
@@ -21,24 +21,24 @@ public class FullPicture extends JFrame{
                 getDefaultScreenDevice().setFullScreenWindow(this); //enables full screen without taskbar
         /** a different way of achieving full screen using the GraphicsEnviroment package
          * unlike the previous version, the program cannot be closed without the button*/
-        ImageIcon closebt = new ImageIcon("file link to closebt.png");
-        closebt = new JButton(closebt);
+        ImageIcon closeBt = new ImageIcon("file link to closebt.png");
+        closebt = new JButton(closeBt);
         setLayout(new FlowLayout());
         add(closebt);
         closebt.setBorder(BorderFactory.createEmptyBorder());
         closebt.setContentAreaFilled(false);
         ImageIcon upArrow = new ImageIcon("file link to upArrow.png");
-        upArrow = new JButton(upArrow);
+        uparrow = new JButton(upArrow);
         setLayout(new FlowLayout());
-        add(upArrow);
-        upArrow.setBorder(BorderFactory.createEmptyBorder());
-        upArrow.setContentAreaFilled(false);//with top removes button borders
+        add(uparrow);
+        uparrow.setBorder(BorderFactory.createEmptyBorder());
+        uparrow.setContentAreaFilled(false);//with top removes button borders
         ImageIcon downArrow = new ImageIcon("file link to downArrow.png");
-        downArrow = new JButton(downArrow);
+        downarrow = new JButton(downArrow);
         setLayout(new FlowLayout());
-        add(downArrow);
-        downArrow.setBorder(BorderFactory.createEmptyBorder());
-        downArrow.setContentAreaFilled(false);
+        add(downarrow);
+        downarrow.setBorder(BorderFactory.createEmptyBorder());
+        downarrow.setContentAreaFilled(false);
         this.setDefaultCloseOperation
                 (JFrame.EXIT_ON_CLOSE);
         this.pack();
