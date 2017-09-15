@@ -33,6 +33,8 @@ public class ButtonPress
                 //after you click the button the background changes
                 color = Color.red.darker().darker().darker();
                 //makes color darker to not hurt the eyes
+                button.setBackground(Color.blue);
+                //button.repaint();
                 panel.setBackground(color);
                 panel.repaint();
                 //repaints the background when pressing the button

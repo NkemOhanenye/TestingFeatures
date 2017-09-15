@@ -20,8 +20,3 @@ public class HelloFrame2 extends JFrame{
         this.setVisible(true);
     }
 }
-class HelloPanel extends JPanel{
-    public HelloPanel(){
-        // code to add components to the panel goes here
-    }
-}

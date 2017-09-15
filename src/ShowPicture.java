@@ -10,7 +10,6 @@ public class ShowPicture {
         ImageIcon icon = new ImageIcon("shu.jpg"); //calls the picture file
         JLabel label = new JLabel (icon, JLabel.CENTER); //places the icon
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        frame.setUndecorated(true);
         frame.add(label);
         frame.setDefaultCloseOperation
                 (JFrame.EXIT_ON_CLOSE);
