@@ -6,13 +6,13 @@ import java.util.Scanner;
 /**
  * Created by otakusenseihig on 2/17/17.
  */
-public class ReadandWrite {
-    public static void main(String args[])
-                throws FileNotFoundException {
-        Scanner diskScanner =
-                new Scanner(new File("rawData.txt"));
-        PrintStream diskWriter =
-                new PrintStream("cookedData.txt");
+
+class ReadAndWrite {
+
+    public static void main(String args[]) throws FileNotFoundException {
+
+        Scanner diskScanner = new Scanner(new File("rawData.txt"));
+        PrintStream diskWriter = new PrintStream("cookedData.txt");
         double unitPrice, quantity, total;
 
         unitPrice = diskScanner.nextDouble();
@@ -24,6 +24,6 @@ public class ReadandWrite {
 
         diskScanner.close();
         diskWriter.close();
-        }
+    }
 }
 
