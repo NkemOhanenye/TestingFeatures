@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Created by otakusenseihig on 2/17/17.
  */
 
-class ReadAndWrite {
+public class ReadandWrite {
 
     public static void main(String args[]) throws FileNotFoundException {
 
