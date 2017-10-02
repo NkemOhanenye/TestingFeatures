@@ -21,8 +21,9 @@ public class GUIREAD extends JFrame{
 
     GUIREAD() throws FileNotFoundException{ //thrown incase File is not found
 
-        //Reads the text file and loops the line
+        //Writes and reads the text file and loops the line
         // to read the text as a string
+        PrintStream txtCreate = new PrintStream("Variable.txt");
         Scanner txtFile = new Scanner(new File("Variable.txt"));
         while (txtFile.hasNextLine()){
             code += (txtFile.nextLine());
@@ -48,6 +49,7 @@ public class GUIREAD extends JFrame{
         panel.add(field);
         this.add(panel);
 
+        txtCreate.close(); //closes the file when code is closed
         txtFile.close(); //closes the file when code is closed
         setVisible(true);
 
