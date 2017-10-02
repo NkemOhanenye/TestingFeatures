@@ -13,6 +13,7 @@ public class FrameColorChanger extends JFrame implements ActionListener {
         panel = new JPanel();
         setSize(500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
         setTitle("Hello World");
         panel.add(button);
         panel.setBackground(Color.pink);
@@ -20,10 +21,6 @@ public class FrameColorChanger extends JFrame implements ActionListener {
         button.addActionListener(this);
 
         setVisible(true);
-    }
-
-    public static void main(String args[]) {
-        new FrameColorChanger();
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -47,7 +44,8 @@ public class FrameColorChanger extends JFrame implements ActionListener {
             }
         }
     }
-   /*public static void main(String args[]){
-      System.out.println("Hello World");
-   }*/
+
+    public static void main(String args[]) {
+        new FrameColorChanger();
+    }
 }
