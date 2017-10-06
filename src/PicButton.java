@@ -33,7 +33,7 @@ public class PicButton extends JFrame{
     public void ExitButtonInside(){ //creates the Exit button
         panel.setLayout(new BorderLayout());
         //makes the panel a global variable
-        ImageIcon closebt = new ImageIcon("/home/otakusenseihig/IdeaProjects/TestingFeatures/closebt.png");
+        ImageIcon closebt = new ImageIcon("./Resources/closebt.png");
         //imports picture for the exitbutton
         exitButton = new JButton(closebt);
         //makes the exitbutton a global variable
@@ -62,9 +62,9 @@ public class PicButton extends JFrame{
         //creates the gridbagconstraints to be used
         panel2.setLayout(new GridBagLayout());
         //gives button GridBagLayout
-        ImageIcon upArrow = new ImageIcon("/home/otakusenseihig/IdeaProjects/TestingFeatures/upArrow.png");
+        ImageIcon upArrow = new ImageIcon("./Resources/upArrow.png");
         //adds an image to the upbutton
-        ImageIcon downArrow = new ImageIcon("/home/otakusenseihig/IdeaProjects/TestingFeatures/downArrow.png");
+        ImageIcon downArrow = new ImageIcon("./Resources/downArrow.png");
         //adds an image to the downbutton
 
         upbutton = new JButton(upArrow);

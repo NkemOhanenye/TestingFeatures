@@ -21,19 +21,19 @@ public class FullPicture extends JFrame{
                 getDefaultScreenDevice().setFullScreenWindow(this);
         /** a different way of achieving full screen using the GraphicsEnviroment package
          * unlike the previous version, the program cannot be closed without the button*/
-        ImageIcon closebt = new ImageIcon("/home/otakusenseihig/IdeaProjects/TestingFeatures/closebt.png");
+        ImageIcon closebt = new ImageIcon("./Resources/closebt.png");
         button3 = new JButton(closebt);
         setLayout(new FlowLayout());
         add(button3);
         button3.setBorder(BorderFactory.createEmptyBorder());
         button3.setContentAreaFilled(false);
-        ImageIcon upArrow = new ImageIcon("/home/otakusenseihig/IdeaProjects/TestingFeatures/upArrow.png");
+        ImageIcon upArrow = new ImageIcon("./Resources/upArrow.png");
         button = new JButton(upArrow);
         setLayout(new FlowLayout());
         add(button);
         button.setBorder(BorderFactory.createEmptyBorder());
         button.setContentAreaFilled(false);
-        ImageIcon downArrow = new ImageIcon("/home/otakusenseihig/IdeaProjects/TestingFeatures/downArrow.png");
+        ImageIcon downArrow = new ImageIcon("./Resources/downArrow.png");
         button2 = new JButton(downArrow);
         setLayout(new FlowLayout());
         add(button2);

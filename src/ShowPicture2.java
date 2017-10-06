@@ -13,7 +13,7 @@ public class ShowPicture2 {
 
 class MyFrame extends JFrame{
     MyFrame(){
-        ImageIcon icon = new ImageIcon("shu.jpg"); //calls the picture file
+        ImageIcon icon = new ImageIcon("./Resources/shu.jpg"); //calls the picture file
         JLabel label = new JLabel(icon); //places the icon
         add(label);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,7 +24,7 @@ class MyFrame extends JFrame{
 /*
 class My2ndFrame extends JFrame{
     My2ndFrame(){
-        ImageIcon icon = new ImageIcon("reh.jpg"); //calls the picture file
+        ImageIcon icon = new ImageIcon("./Resources/reh.jpg"); //calls the picture file
         JLabel label = new JLabel(icon); //places the icon
         add(label);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

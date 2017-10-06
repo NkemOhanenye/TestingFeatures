@@ -17,12 +17,12 @@ public class ImageTutorial extends JFrame{
         ImageTutorial(){
             setLayout(new FlowLayout());
 
-            image1 = new ImageIcon(getClass().getResource("reh.jpg"));
+            image1 = new ImageIcon(getClass().getResource("./Resources/reh.jpg"));
 
             label1 = new JLabel(image1);
             add(label1);
 
-            image2 = new ImageIcon(getClass().getResource("shu.jpg"));
+            image2 = new ImageIcon(getClass().getResource("./Resources/shu.jpg"));
 
             label2 = new JLabel(image2);
             add(label2);
