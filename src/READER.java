@@ -16,23 +16,25 @@ public class READER {
 
         //used to write the line i want in the code
         //immediately turned off afterwards
-        /*PrintStream MakeWriter = new PrintStream(new File("Read.txt"));
-        MakeWriter.println("int test = 1;");
-        MakeWriter.close();*/
+        PrintStream MakeWriter = new PrintStream(new File("Read.txt"));
+        MakeWriter.println("1");
+        MakeWriter.close();
 
         Scanner txtFile = new Scanner(new File("Read.txt"));
-        while (txtFile.hasNextLine()){
+
+        while (txtFile.hasNextLine()) {
             //to convert Scanner to String
             String code = txtFile.nextLine();
-            System.out.println(code);
+            //System.out.println(code);
+            int myInt = Integer.parseInt(code);
+            System.out.println(myInt + 2);
         }
-        /*for (int loop = 10; loop <= 100; loop++) {
-            System.out.println(loop);
-        }*/
+
         txtFile.close();
 
     }
-    public static void main(String args[]) throws FileNotFoundException{
+    public static void main(String args[]) throws FileNotFoundException {
         new READER();
+
     }
 }
