@@ -15,10 +15,16 @@ import java.util.Scanner;
 public class ScannerExample3 {
     private Scanner x;
 
+    public ScannerExample3(){
+        openFile();
+        readFile();
+        closeFile();
+
+    }
     public void openFile(){
         //alternative to throwing FileNotFoundException
         try{
-            x = new Scanner(new File("File.txt"));
+            x = new Scanner(new File("tall.txt"));
         } catch (Exception e){
             System.out.println("could not find file");
         }
@@ -30,14 +36,19 @@ public class ScannerExample3 {
             String a = x.next();
             String b = x.next();
             String c = x.next();
+            String d = x.next();
 
             //spaces and displays contents of file
-            System.out.printf("%s %s %s\n", a,b,c);
+            System.out.printf("%s %s %s %s\n", a,b,c,d);
         }
     }
     //closes the file
     public void closeFile(){
         x.close();
+    }
+
+    public static void main(String args[]){
+        new ScannerExample3();
     }
 
 }
