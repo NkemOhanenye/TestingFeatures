@@ -36,7 +36,9 @@ public class TimeSeriesDemo11 extends ApplicationFrame {
     /**
      * A demonstration application showing how to...
      *
-     * @param title  the frame title.
+     * @param title  the fr//creates the plot
+    XYPlot plot = (XYPlot) scatterChart.getPlot();
+    plot.setNoDataMessage("NO DATA"); //error messageame title.
      */
     public TimeSeriesDemo11(String title) {
 
