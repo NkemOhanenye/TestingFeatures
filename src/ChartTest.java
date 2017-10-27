@@ -14,17 +14,14 @@ import org.jfree.data.function.Function2D;
 import org.jfree.data.function.NormalDistributionFunction2D;
 import org.jfree.data.general.DatasetUtilities;
 import org.jfree.data.general.DefaultPieDataset;
-import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
-import org.jfree.ui.RefineryUtilities;
 import org.jfree.ui.TextAnchor;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 
 /*
  * Created by IntelliJ IDEA.
@@ -364,6 +361,7 @@ public class ChartTest extends JFrame{
                 //creates the plot
                 XYPlot plot = (XYPlot) scatterChart.getPlot();
                 plot.setNoDataMessage("NO DATA"); //error message
+                plot.setBackgroundPaint(new Color(255, 150, 255)); //adds color to the chart
 
                 plot.setDomainPannable(true);
                 plot.setRangePannable(true);
@@ -382,7 +380,7 @@ public class ChartTest extends JFrame{
                 plot.setDomainMinorGridlinesVisible(true);
                 plot.setRangeMinorGridlinesVisible(true);
 
-                //creates shapes
+                //creates shape's outline
                 XYLineAndShapeRenderer renderer
                         = (XYLineAndShapeRenderer) plot.getRenderer();
                 renderer.setSeriesOutlinePaint(0, Color.black);

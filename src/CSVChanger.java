@@ -10,6 +10,7 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.XYPlot;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
@@ -23,7 +24,6 @@ public class CSVChanger extends JFrame{
     private JPanel chart;
 
     private Scanner csv;
-    private int[] csvI;
 
     public CSVChanger() {
 
@@ -35,7 +35,10 @@ public class CSVChanger extends JFrame{
         setTitle("CSV Changer");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        setBackground(Color.white);
 
+        //panel settings
+        chart.setBackground(Color.white);
 
         XYSeriesCollection scatterChartData = new XYSeriesCollection();         // creates the collection
 
@@ -46,7 +49,7 @@ public class CSVChanger extends JFrame{
 
         JFreeChart scatterChart = ChartFactory.createScatterPlot(          //creates scatter chart
                 "CSV Test",          //Chart Title
-                "placement",          //domain axis label
+                "Placement",          //domain axis label
                 "File Numbers",          //range axis label
                 scatterChartData,                   //data
                 PlotOrientation.VERTICAL,           //orientation
@@ -54,6 +57,11 @@ public class CSVChanger extends JFrame{
                 true,              //tooltips?
                 false                 //URL?
         );
+
+        //creates the plot
+        XYPlot plot = (XYPlot) scatterChart.getPlot();
+        plot.setNoDataMessage("NO DATA"); //error message
+        plot.setBackgroundPaint(new Color(0,0,0));
 
         //open file
         try {
@@ -99,7 +107,7 @@ public class CSVChanger extends JFrame{
         //creates the chart's panel and adds to the pain panel
         ChartPanel scatterPanel = new ChartPanel(scatterChart); //creates the chart panel
         scatterPanel.setMouseWheelEnabled(true);            //lets zoom by mouse scroller
-        scatterPanel.setPreferredSize(new Dimension(460, 400));     //changes the size of the panel to fit the JPanel
+        scatterPanel.setPreferredSize(new Dimension(480, 460));     //changes the size of the panel to fit the JPanel
         chart.removeAll();                 //removes the previous panel before adding another one (prevent stacking)
         chart.add(scatterPanel, BorderLayout.CENTER);
         chart.validate();          //similar to setVisible(true)
