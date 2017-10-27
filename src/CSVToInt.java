@@ -35,7 +35,8 @@ public class CSVToInt {
             int StrToNum8 = Integer.parseInt(a.split(",")[7]);
             int StrToNum9 = Integer.parseInt(a.split(",")[8]);
             int StrToNum10 = Integer.parseInt(a.split(",")[9]);
-            System.out.println(StrToNum + ", " + StrToNum2 + ", " + StrToNum3 + ", " + StrToNum4);
+            System.out.println(StrToNum + ", " + StrToNum2 + ", " + StrToNum3 + ", " + StrToNum4 + ", " + StrToNum5  +
+                    ", " + StrToNum6 + ", " + StrToNum7 + ", " + StrToNum8 + ", " + StrToNum9 + ", " + StrToNum10);
             //System.out.println(StrToNum + 2); //@Number 2, used to show working int
 
         }
