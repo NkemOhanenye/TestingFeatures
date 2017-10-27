@@ -51,8 +51,13 @@ public class PieChartDemo5 extends ApplicationFrame {
         dataset.setValue("Section 3", 43.3);
         dataset.setValue("Section 4", 11.1);
 
-        JFreeChart chart1 = ChartFactory.createPieChart("Chart 1", dataset,
-                false, false, false);
+        JFreeChart chart1 = ChartFactory.createPieChart(
+                "Chart 1",
+                dataset,
+                false,
+                false,
+                false
+        );
         chart1.addSubtitle(new TextTitle("setCircular(true);",
                 new Font("Dialog", Font.PLAIN, 12)));
         PiePlot plot1 = (PiePlot) chart1.getPlot();

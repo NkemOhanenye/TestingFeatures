@@ -63,7 +63,7 @@ public class SlidingCategoryDatasetDemo2 extends ApplicationFrame {
             JFreeChart chart = createChart(this.dataset);
             addChart(chart);
             ChartPanel cp1 = new ChartPanel(chart);
-            cp1.setPreferredSize(new Dimension(400, 400));
+            cp1.setPreferredSize(new Dimension(500, 500));
             this.scroller = new JScrollBar(SwingConstants.HORIZONTAL, 0, 10, 0,
                     50);
             add(cp1);
@@ -83,7 +83,7 @@ public class SlidingCategoryDatasetDemo2 extends ApplicationFrame {
         private static CategoryDataset createDataset() {
             DefaultCategoryDataset dataset = new DefaultCategoryDataset();
             for (int i = 0; i < 50; i++) {
-                dataset.addValue(Math.random() * 100.0, "S1", "S" + i);
+                dataset.addValue(Math.random() * 100.0, "S1", "S" + (i + 1));
             }
             return dataset;
         }
