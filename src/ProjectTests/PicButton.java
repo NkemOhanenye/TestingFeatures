@@ -1,4 +1,4 @@
-/**
+package ProjectTests; /**
  * Created by otakusenseihig on 3/4/17.
  */
 import javax.swing.*;

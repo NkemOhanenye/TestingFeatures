@@ -1,8 +1,11 @@
 /**
  * Created by otakusenseihig on 2/19/17.
  */
+//import HelloPanel;
+
 import javax.swing.*;
 // HelloFrame constructor
+
 public class HelloFrame2 extends JFrame{
     public static void main(String args[]){new HelloFrame2();}
     public HelloFrame2(){
@@ -12,7 +15,7 @@ public class HelloFrame2 extends JFrame{
 
         //JPanel panel = new JPanel();
         HelloPanel panel = // added instead of above
-                new HelloPanel(); //added to call class HelloPanel
+                new HelloPanel(); //added to call class BASICCODE.HelloPanel
         this.add(panel); //adds the panel
         this.add(new HelloPanel()); //can be done alternatively
         //code to add components to the panel goes here

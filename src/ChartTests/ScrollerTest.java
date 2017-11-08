@@ -1,4 +1,4 @@
-/*
+package ChartTests;/*
  * Created by IntelliJ IDEA.
  * User: otakusenseihig
  * Date: 10/20/17
@@ -15,11 +15,8 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
-import org.jfree.data.category.SlidingCategoryDataset;
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

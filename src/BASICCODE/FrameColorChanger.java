@@ -1,3 +1,5 @@
+package BASICCODE;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -36,7 +38,7 @@ public class FrameColorChanger extends JFrame implements ActionListener {
                 panel.setBackground(Color.yellow);
             if (clickCount == 5) {
                 panel.setBackground(Color.green);
-                button.setText("RestartButton");
+                button.setText("ProjectTests.RestartButton");
             }
             if (clickCount == 6) {
                 dispose();

@@ -1,4 +1,4 @@
-/**
+package BASICCODE; /**
  * Created by otakusenseihig on 2/17/17.
  */
 import java.util.Scanner;

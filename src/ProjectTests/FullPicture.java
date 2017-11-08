@@ -1,4 +1,4 @@
-/**
+package ProjectTests; /**
  * Created by otakusenseihig on 3/4/17.
  */
 import javax.swing.*;
@@ -27,13 +27,13 @@ public class FullPicture extends JFrame{
         add(button3);
         button3.setBorder(BorderFactory.createEmptyBorder());
         button3.setContentAreaFilled(false);
-        ImageIcon upArrow = new ImageIcon("./Resources/upArrow.png");
+        ImageIcon upArrow = new ImageIcon("../Resources/upArrow.png");
         button = new JButton(upArrow);
         setLayout(new FlowLayout());
         add(button);
         button.setBorder(BorderFactory.createEmptyBorder());
         button.setContentAreaFilled(false);
-        ImageIcon downArrow = new ImageIcon("./Resources/downArrow.png");
+        ImageIcon downArrow = new ImageIcon("../Resources/downArrow.png");
         button2 = new JButton(downArrow);
         setLayout(new FlowLayout());
         add(button2);

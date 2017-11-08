@@ -1,4 +1,4 @@
-/*
+package ProjectTests;/*
  * Created by IntelliJ IDEA.
  * User: otakusenseihig
  * Date: 10/2/17
@@ -55,7 +55,7 @@ public class RestartButton extends JFrame implements ActionListener {
                 panel.setBackground(Color.yellow);
             if (clickCount == 5) {
                 panel.setBackground(Color.green);
-                ColorChanger.setText("RestartButton");
+                ColorChanger.setText("ProjectTests.RestartButton");
             }
             if (clickCount == 6) {
                 restart();

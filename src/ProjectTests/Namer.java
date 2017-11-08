@@ -1,8 +1,8 @@
-/**
+package ProjectTests; /**
  * Created by otakusenseihig on 2/24/17.
  */
 import javax.swing.*;
-import java.awt.event.*;
+
 public class Namer extends JFrame{
     public static void main(String args[]){new Namer();}
     private JButton buttonOK;
@@ -58,14 +58,14 @@ public class Namer extends JFrame{
         /*String name = textName.getText();
         if (name.length() == 0){
             JOptionPane.showMessageDialog(
-                    Namer.this,
+                    ProjectTests.Namer.this,
                     "You didn't enter anything!",
                     "Moron",
                     JOptionPane.INFORMATION_MESSAGE);
         }*/
         /*else {
             JOptionPane.showMessageDialog(
-                    Namer.this,
+                    ProjectTests.Namer.this,
                     "Good morning " + name,
                     "Salutations",
                     JOptionPane.INFORMATION_MESSAGE);
