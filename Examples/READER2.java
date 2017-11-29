@@ -13,7 +13,7 @@ public class READER2 {
     //to read second line
     public READER2() throws FileNotFoundException{
 
-        Scanner txtFile = new Scanner(new File("Read.txt"));
+        Scanner txtFile = new Scanner(new File("read.txt"));
         while (txtFile.hasNextLine()){
             //to convert Scanner to String
             String code = txtFile.nextLine();

@@ -29,7 +29,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */ 
 
-package components;
+package demo;
 
 import javax.swing.JOptionPane;
 import javax.swing.JDialog;

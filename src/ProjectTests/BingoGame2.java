@@ -219,6 +219,6 @@ public class BingoGame2 extends JFrame{
         }
     }
     public static void main(String args[]) {
-        new BingoHelp();
+        new BingoGame2();
     }
 }

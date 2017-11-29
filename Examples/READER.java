@@ -16,11 +16,11 @@ public class READER {
 
         //used to write the line i want in the code
         //immediately turned off afterwards
-        PrintStream MakeWriter = new PrintStream(new File("Read.txt"));
+        PrintStream MakeWriter = new PrintStream(new File("read.txt"));
         MakeWriter.println("1");
         MakeWriter.close();
 
-        Scanner txtFile = new Scanner(new File("Read.txt"));
+        Scanner txtFile = new Scanner(new File("read.txt"));
 
         while (txtFile.hasNextLine()) {
             //to convert Scanner to String
