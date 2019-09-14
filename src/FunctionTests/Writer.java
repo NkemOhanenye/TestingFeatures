@@ -1,55 +1,57 @@
-package FunctionTests;/*
+package FunctionTests;
+/*
  * Created by IntelliJ IDEA.
- * User: otakusenseihig
+ * User: Nkem Ohanenye
  * Date: 11/3/17
  * Time: 4:42 PM
  */
 
 import java.io.*;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Writer{
 
-    private String directory;
-    private String path = "./Resources";
-    private String words;
-    private String fileName;
-    private String fileType = ".txt";
-    private File file;
-    private Boolean dupe = true;
-    private FileOutputStream fos;
-    private ArrayList<Double> arry;
+    private static String directory;
+    //private static String path = "./Resources";
+    private static String words;
+    private static String fileName;
+    private static String fileType = ".txt";
+    private static File file;
+    private static FileOutputStream fos;
+    private static ArrayList<Double> arry;
 
-    public void create(String fileName)
+    public static void create(String path, String name)
             throws FileNotFoundException, IOException{
 
-        directory = path + "/" + fileName + fileType;
+        directory = path + "/" + name + fileType;
         file = new File(directory);
-        this.fileName = fileName;
-        fileName = this.fileName;
+        fileName = name;
         if(!file.exists()){
             file.createNewFile();
         }
 
     }
-    public boolean exist(){
+    public static boolean exist(){
         return file.exists();
     }
 
-    public void write(String words) throws FileNotFoundException, IOException{
+    public static void write(String word) throws FileNotFoundException, IOException{
 
-        fos = new FileOutputStream(file, dupe);
+        fos = new FileOutputStream(file, true);
         PrintStream MakeWriter = new PrintStream(fos);
         MakeWriter.println(words);
-        this.words = words;
+        words = word;
+
         MakeWriter.close();
         fos.close();
 
     }
 
-    public ArrayList<Double> read() throws FileNotFoundException{
+    public static ArrayList<Double> read() throws FileNotFoundException{
+        NumberFormat formatter = new DecimalFormat("#.00");
         arry = new ArrayList<Double>();
         Scanner scnr = new Scanner(new File(directory));
         while(scnr.hasNextLine()){
@@ -61,33 +63,17 @@ public class Writer{
         }
         return arry;
     }
-    private static String replaceBrackets(String string){
-        return string
-                .replace(",", "")
-                .replace("[", "")
-                .replace("]","")
-                .trim();
-    }
 
     public String getFileName() {
         return fileName;
     }
 
-    public String getFileType() {
-        return fileType;
-    }
+    /*public String getPath() {
+        return path;
+    }*/
 
     public String getDirectory() {
         return directory;
-    }
-
-    public void setFos(File f, boolean boo) {
-        this.file = f;
-        this.dupe = boo;
-    }
-
-    public FileOutputStream getFos() {
-        return fos;
     }
 
     public String getWords() {

@@ -1,6 +1,6 @@
 /*
  * Created by IntelliJ IDEA.
- * User: otakusenseihig
+ * User: Nkem Ohanenye
  * Date: 11/10/17
  * Time: 5:06 PM
  */
@@ -10,74 +10,53 @@ import java.io.*;
 import javax.swing.*;
 import java.awt.event.*;
 
+
 public class FileGui {
 
-    private Writer writer = new Writer();
+    /*private Writer writer = new Writer();
     private String fileName = writer.getFileName();
     private String write = writer.getWords();
     private String directory = writer.getDirectory();
+    private String path = writer.getPath();
+
     private File file;
-    private JButton oW = new JButton("Overwrite");
-    private JButton rN = new JButton("Rename");
-    private JButton aO = new JButton("Add On");
-    private JButton c = new JButton("Cancel");
 
-    public void writeGui(String fileName, String write) throws FileNotFoundException, IOException{
+    private JButton oW = new JButton("Overwrite"); //Works
+    private JButton aO = new JButton("Add On"); // Works
+    private JButton c = new JButton("Cancel"); // works
 
+    private JDialog fileFoundDialog;
+
+    public void writeGui(String fileName) throws FileNotFoundException, IOException{
+
+        //Method Settings
         this.fileName = fileName;
-        this.write = write;
         writer.create(fileName);
+        directory = path + "/" + fileName + ".txt";
+        file = new File(directory);
 
+        //Frame Settings
+        JFrame fileFoundFrame = new JFrame();
+        fileFoundDialog = new JDialog(fileFoundFrame, "Confirm Overwrite of: " + fileName, true);
 
-        //if(writer.exist()){
-
+        //Main Button Settings
         oW.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
-                    writer.setFos(file, false);
-                    writer.write(write);
+                    file.delete();
                 } catch (Exception e) {
 
                 }
-                System.out.println();
-                System.exit(0);
+                fileFoundDialog.dispose();
             }
         });
-        rN.addActionListener(new ActionListener() {
+        aO.addActionListener(new ActionListener()  {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                JButton rename = new JButton("Rename");
-                rename.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent actionEvent) {
-                        file.renameTo(new File(writer.getDirectory()));
-                            return;
-                        }
-                });
-                JButton cancel = new JButton("Cancel");
-                //JLabel label = new JLabel(writer.getFileName() + "(1)" + writer.getFileType());
-                Object[] word = {writer.getFileName() + "(1)" + writer.getFileType()};
-                Object[] buttons2 = {rename, cancel};
-                JOptionPane.showInputDialog(
-                        null,
-                        "What would you like to rename the file to? \n",
-                        "Rename File",
-                        0,
-                        null,
-                        word,
-                        buttons2[0]);
 
-            }
-        });
-        aO.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                try {
-                    writer.write(writer.getWords());
-                }catch (Exception e){
+                fileFoundDialog.dispose();
 
-                }
             }
         });
         c.addActionListener(new ActionListener() {
@@ -87,19 +66,32 @@ public class FileGui {
             }
         });
 
+        //If A File Exists Settings
         if(writer.exist()){
-            Object[] buttons = new Object[]{oW, rN, aO, c};
-            JOptionPane.showOptionDialog(null,
+
+            Object[] buttons = new Object[]{oW, aO, c};
+            JOptionPane pane = new JOptionPane(
                     "The file already exists.",
-                    "",
-                    0,
                     JOptionPane.WARNING_MESSAGE,
+                    JOptionPane.YES_NO_CANCEL_OPTION,
                     null,
                     buttons,
                     buttons[0]);
 
+            fileFoundDialog.getContentPane().add(pane);
+            fileFoundDialog.setSize(405,120);
+            fileFoundDialog.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            fileFoundDialog.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent e) {
+                    System.exit(0);
+                }
+            });
+            fileFoundDialog.setLocationRelativeTo(fileFoundFrame);
+            fileFoundDialog.setVisible(true);
+
         }else{
-            System.exit(0);
+            fileFoundDialog.dispose();
         }
-    }
+    }*/
 }

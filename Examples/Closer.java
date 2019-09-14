@@ -3,7 +3,7 @@ import java.awt.event.*;
 
 
 /**
- * Created by otakusenseihig on 2/24/17.
+ * Created by Nkem Ohanenye on 2/24/17.
  */
 public class Closer extends JFrame implements WindowListener {
     public void windowClosing(WindowEvent e){exitButton.doClick();}

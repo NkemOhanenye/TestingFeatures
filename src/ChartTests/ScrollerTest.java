@@ -1,6 +1,6 @@
 package ChartTests;/*
  * Created by IntelliJ IDEA.
- * User: otakusenseihig
+ * User: Nkem Ohanenye
  * Date: 10/20/17
  * Time: 2:39 PM
  */

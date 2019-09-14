@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 /**
- * Created by otakusenseihig on 5/4/17.
+ * Created by Nkem Ohanenye on 5/4/17.
  */
 public class NoDupe {
     public static void main(String args[]){

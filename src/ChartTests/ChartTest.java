@@ -27,7 +27,7 @@ import java.awt.event.ActionListener;
 
 /*
  * Created by IntelliJ IDEA.
- * User: otakusenseihig
+ * User: Nkem Ohanenye
  * Date: 10/18/17
  * Time: 2:28 PM
  */

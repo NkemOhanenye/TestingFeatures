@@ -1,7 +1,7 @@
 package BASICCODE;
 
 /**
- * Created by otakusenseihig on 3/11/17.
+ * Created by Nkem Ohanenye on 3/11/17.
  */
 public class MathFloor {
     public static void main(String args[]){

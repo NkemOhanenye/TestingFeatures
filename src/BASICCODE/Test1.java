@@ -1,5 +1,5 @@
 package BASICCODE; /**
- * Created by otakusenseihig on 2/17/17.
+ * Created by Nkem Ohanenye on 2/17/17.
  */
 import java.util.Scanner;
 public class Test1 {

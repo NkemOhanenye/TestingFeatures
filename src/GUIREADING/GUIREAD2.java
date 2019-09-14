@@ -1,6 +1,6 @@
 package GUIREADING;/*
  * Created by IntelliJ IDEA.
- * User: otakusenseihig
+ * User: Nkem Ohanenye
  * Date: 10/4/17
  * Time: 5:11 PM
  */

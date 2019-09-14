@@ -38,7 +38,7 @@ public class FrameColorChanger extends JFrame implements ActionListener {
                 panel.setBackground(Color.yellow);
             if (clickCount == 5) {
                 panel.setBackground(Color.green);
-                button.setText("ProjectTests.RestartButton");
+                button.setText("Restart Button");
             }
             if (clickCount == 6) {
                 dispose();

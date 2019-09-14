@@ -1,6 +1,6 @@
 /*
  * Created by IntelliJ IDEA.
- * User: otakusenseihig
+ * User: Nkem Ohanenye
  * Date: 11/2/17
  * Time: 1:38 PM
  */
@@ -13,11 +13,14 @@ public class ATest {
         //A basic Array
         int bucky[] = new int[10];
 
-        bucky[0] = 87;
+        for (int i = 0; i < bucky.length; i++) {
+            bucky[i] = i;
+        }
+        /*bucky[0] = 87;
         bucky[1] = 543;
-        bucky[9] = 65;
+        bucky[9] = 65;*/
 
-        System.out.println(bucky[1]);
+        System.out.println(bucky[5]);
 
         //A basic 2d array
         int[][] multi = new int[5][5];

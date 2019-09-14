@@ -201,7 +201,7 @@ public class BingoGame2 extends JFrame{
                             @Override
                             public void actionPerformed(ActionEvent actionEvent) {
                                 dispose();
-                                new BingoHelp();
+                                new BingoGame2();
                             }
                         });
                         exit = new JButton("Exit");

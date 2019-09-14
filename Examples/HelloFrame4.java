@@ -1,5 +1,5 @@
 /**
- * Created by otakusenseihig on 2/20/17.
+ * Created by Nkem Ohanenye on 2/20/17.
  */
 import javax.swing.*;
 public class HelloFrame4 extends JFrame{

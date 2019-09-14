@@ -1,6 +1,6 @@
 /*
  * Created by IntelliJ IDEA.
- * User: otakusenseihig
+ * User: Nkem Ohanenye
  * Date: 11/28/17
  * Time: 1:59 PM
  */
@@ -22,10 +22,8 @@ public class FileArryList {
             for (String num : splitStr) {
                 arry.add(Double.parseDouble(num));
             }
-            //Double str = Double.parseDouble(s);
-            //arry.add(str);
         }
-        System.out.println(replaceBrackets(arry.toString())+ "test 3");
+        System.out.println(arry+ " test 3");
     }
     private static String replaceBrackets(String string){
         return string

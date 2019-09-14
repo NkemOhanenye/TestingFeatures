@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 
 /**
- * Created by otakusenseihig on 3/10/17.
+ * Created by Nkem Ohanenye on 3/10/17.
  */
 
 public class IncrtbyPoint extends JFrame{

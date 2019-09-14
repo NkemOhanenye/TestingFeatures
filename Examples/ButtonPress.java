@@ -1,5 +1,5 @@
 /**
- * Created by otakusenseihig on 3/7/17.
+ * Created by Nkem Ohanenye on 3/7/17.
  */
 import javax.swing.*;
 import java.awt.*;

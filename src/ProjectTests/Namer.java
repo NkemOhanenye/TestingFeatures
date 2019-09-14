@@ -1,5 +1,5 @@
 package ProjectTests; /**
- * Created by otakusenseihig on 2/24/17.
+ * Created by Nkem Ohanenye on 2/24/17.
  */
 import javax.swing.*;
 

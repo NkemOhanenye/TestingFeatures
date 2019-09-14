@@ -3,7 +3,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
 /**
- * Created by otakusenseihig on 2/23/17.
+ * Created by Nkem Ohanenye on 2/23/17.
  */
 public class ClickMeLambda extends JFrame{
     public static void main(String args[]){new ClickMeLambda();}

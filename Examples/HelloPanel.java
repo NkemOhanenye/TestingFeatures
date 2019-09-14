@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 /**
- * Created by otakusenseihig on 4/6/17.
+ * Created by Nkem Ohanenye on 4/6/17.
  */
 class HelloPanel extends JPanel {
     public HelloPanel(){

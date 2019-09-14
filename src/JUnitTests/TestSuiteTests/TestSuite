@@ -1,0 +1,4 @@
+TestSuie suite = new TestSuite();
+suite.addTest(new [class name]("test[testing]"))
+suite.addTest(new [class name]("test[testing]"))
+TestResult result = suite.run();

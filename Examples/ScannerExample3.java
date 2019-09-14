@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /*
  * Created by IntelliJ IDEA.
- * User: otakusenseihig
+ * User: Nkem Ohanenye
  * Date: 10/6/17
  * Time: 4:34 PM
  *

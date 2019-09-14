@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 /**
- * Created by otakusenseihig on 2/17/17.
+ * Created by Nkem Ohanenye on 2/17/17.
  */
 //extends the class and makes one specifically for Framing
 public class ShowPicture2 {
